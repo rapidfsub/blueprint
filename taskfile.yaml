@@ -3,3 +3,6 @@ version: "3"
 includes:
   brew: ./taskfiles/brew.yaml
   nix: ./taskfiles/nix.yaml
+  vscode:
+    taskfile: ./taskfiles/vscode.yaml
+    aliases: [vsc]

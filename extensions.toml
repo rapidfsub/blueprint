@@ -1,0 +1,6 @@
+
+extensions = [
+  "jakebecker.elixir-ls",
+  "tamasfe.even-better-toml",
+  "redhat.vscode-yaml",
+]
