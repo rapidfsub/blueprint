@@ -12,12 +12,13 @@
       configuration = { pkgs, ... }: {
         # List packages installed in system profile. To search by name, run:
         # $ nix-env -qaP | grep wget
-        environment.systemPackages = with pkgs;[
+        environment.systemPackages = with pkgs; [
           chezmoi
           go-task
           lazygit
           jq
           yq
+          nixpkgs-fmt
         ];
 
         # Necessary for using flakes on this system.
