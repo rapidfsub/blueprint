@@ -16,6 +16,8 @@
           chezmoi
           go-task
           lazygit
+          jq
+          yq
         ];
 
         # Necessary for using flakes on this system.
