@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  apply:
+    aliases: [a]
+    cmds:
+      - chezmoi apply -c=./.config/chezmoi/chezmoi.toml

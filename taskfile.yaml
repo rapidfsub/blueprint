@@ -1,7 +1,12 @@
 version: "3"
 
 includes:
-  brew: ./taskfiles/brew.yaml
+  brew:
+    taskfile: ./taskfiles/brew.yaml
+    aliases: [b]
+  chezmoi:
+    taskfile: ./taskfiles/chezmoi.yaml
+    aliases: [cm]
   nix: ./taskfiles/nix.yaml
   vscode:
     taskfile: ./taskfiles/vscode.yaml
