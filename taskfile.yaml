@@ -1,4 +1,5 @@
 version: "3"
 
 includes:
+  brew: ./taskfiles/brew.yaml
   nix: ./taskfiles/nix.yaml
