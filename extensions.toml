@@ -1,0 +1,36 @@
+extensions = [
+  "adpyke.vscode-sql-formatter",
+  "dendron.dendron",
+  # "wakatime.vscode-wakatime",
+
+  # plain text format
+  "mechatroner.rainbow-csv",
+  "redhat.vscode-yaml",
+  "richie5um2.vscode-sort-json",
+  "tamasfe.even-better-toml",
+
+  # shell script
+  "bmalehorn.vscode-fish",
+  "foxundermoon.shell-format",
+
+  # git
+  "donjayamanne.githistory",
+  "letmaik.git-tree-compare",
+  "waderyan.gitblame",
+
+  # elixir
+  "jakebecker.elixir-ls",
+  "phoenixframework.phoenix",
+  "samuel-pordeus.elixir-test",
+
+  # markdown
+  "bierner.markdown-mermaid",
+  "IricBing.iricbing-markdown-formatter",
+
+  # nix
+  "jnoortheen.nix-ide",
+
+  # python
+  "ms-python.autopep8",
+  "ms-python.python",
+]

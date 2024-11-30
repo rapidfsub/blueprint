@@ -1,0 +1,27 @@
+version: "3"
+
+tasks:
+  uninstall-extensions:
+    aliases: [ue]
+    cmds:
+      - >
+        diff -i <(code --list-extensions) <(tomlq -r '.extensions[]' ./extensions.toml | sort) |
+        grep '<' |
+        sed 's/^< //g' |
+        xargs -n 1 code --uninstall-extension
+
+  install-extensions:
+    aliases: [ie]
+    cmds:
+      - >
+        diff -i <(code --list-extensions) <(tomlq -r '.extensions[]' ./extensions.toml | sort) |
+        grep '>' |
+        sed 's/^> //g' |
+        xargs -n 1 code --install-extension
+
+  sync-extensions:
+    aliases: [se]
+    cmds:
+      - task: uninstall-extensions
+      - task: install-extensions
+      - code --update-extensions
