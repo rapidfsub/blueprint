@@ -1,3 +1,5 @@
-[user]
-	name = Minsub Kim
-	email = rapidfsub@gmail.com
+[include]
+path = ./rapidfsub.inc
+
+[includeIf "gitdir:~/devall/"]
+path = ./devall.inc
