@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 cask "firefox"
+cask "karabiner-elements"
 cask "mullvad-browser"
 cask "postgres-unofficial"
 cask "visual-studio-code"
