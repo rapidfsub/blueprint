@@ -6,7 +6,7 @@ includes:
     aliases: [b]
   chezmoi:
     taskfile: ./taskfiles/chezmoi.yaml
-    aliases: [cm]
+    aliases: [c]
   nix: ./taskfiles/nix.yaml
   vscode:
     taskfile: ./taskfiles/vscode.yaml
