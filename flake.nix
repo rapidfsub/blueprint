@@ -21,6 +21,13 @@
           nixpkgs-fmt
           shfmt
           mise
+
+          # kerl
+          jdk
+          wxGTK32
+          openssl
+          unixODBC
+          fop
         ];
 
         # Necessary for using flakes on this system.
@@ -38,6 +45,13 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
+
+        ### added
+        environment.variables = {
+          SSLDEV = "${pkgs.openssl.dev}";
+          SSLOUT = "${pkgs.openssl.out}";
+          ODBCOUT = "${pkgs.unixODBC.out}";
+        };
       };
     in
     {

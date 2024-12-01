@@ -9,6 +9,10 @@ includes:
     taskfile: ./taskfiles/chezmoi.yaml
     aliases: [c]
 
+  mise:
+    taskfile: ./taskfiles/mise.yaml
+    aliases: [m]
+
   nix:
     taskfile: ./taskfiles/nix.yaml
     aliases: [n]
