@@ -52,6 +52,10 @@
           SSLOUT = "${pkgs.openssl.out}";
           ODBCOUT = "${pkgs.unixODBC.out}";
         };
+
+        environment.shellAliases = {
+          lg = "lazygit";
+        };
       };
     in
     {
