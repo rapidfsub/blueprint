@@ -4,10 +4,15 @@ includes:
   brew:
     taskfile: ./taskfiles/brew.yaml
     aliases: [b]
+
   chezmoi:
     taskfile: ./taskfiles/chezmoi.yaml
     aliases: [c]
-  nix: ./taskfiles/nix.yaml
+
+  nix:
+    taskfile: ./taskfiles/nix.yaml
+    aliases: [n]
+
   vscode:
     taskfile: ./taskfiles/vscode.yaml
     aliases: [vsc]

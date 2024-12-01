@@ -20,6 +20,7 @@
           yq
           nixpkgs-fmt
           shfmt
+          mise
         ];
 
         # Necessary for using flakes on this system.
