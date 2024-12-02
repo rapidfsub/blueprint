@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 cask "firefox"
+cask "google-chrome"
 cask "karabiner-elements"
 cask "linearmouse"
 cask "mullvad-browser"
