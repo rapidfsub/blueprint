@@ -21,6 +21,7 @@
           nixpkgs-fmt
           shfmt
           mise
+          dotenvx
 
           # kerl
           jdk
