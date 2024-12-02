@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+cask "figma"
 cask "firefox"
 cask "google-chrome"
 cask "karabiner-elements"
