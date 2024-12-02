@@ -17,7 +17,6 @@
           bottom
           chezmoi
           cloc
-          dnstop
           flyctl
           go-task
           shfmt
@@ -46,6 +45,10 @@
           direnv
           dotenvx
           mise
+
+          # network
+          dnstop
+          doggo
         ];
 
         # Necessary for using flakes on this system.
