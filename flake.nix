@@ -21,6 +21,7 @@
           nixpkgs-fmt
           shfmt
           mise
+          ripgrep
 
           # kerl
           jdk
