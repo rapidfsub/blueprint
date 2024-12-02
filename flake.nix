@@ -18,6 +18,7 @@
           chezmoi
           cloc
           dnstop
+          flyctl
           go-task
           shfmt
           ripgrep
