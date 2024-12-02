@@ -17,6 +17,7 @@
           bottom
           chezmoi
           cloc
+          dnstop
           go-task
           shfmt
           ripgrep
