@@ -16,6 +16,7 @@
           bat
           bottom
           chezmoi
+          cloc
           go-task
           shfmt
           ripgrep
