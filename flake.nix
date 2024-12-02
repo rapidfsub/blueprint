@@ -22,6 +22,7 @@
           shfmt
           mise
           ripgrep
+          git-lfs
 
           # kerl
           jdk
