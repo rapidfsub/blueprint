@@ -13,16 +13,14 @@
         # List packages installed in system profile. To search by name, run:
         # $ nix-env -qaP | grep wget
         environment.systemPackages = with pkgs; [
+          bat
           chezmoi
           go-task
-          lazygit
-          jq
-          yq
-          nixpkgs-fmt
           shfmt
-          mise
           ripgrep
-          git-lfs
+
+          # nix
+          nixpkgs-fmt
 
           # kerl
           jdk
@@ -31,9 +29,18 @@
           unixODBC
           fop
 
+          # data format
+          jq
+          yq
+
+          # git
+          git-lfs
+          lazygit
+
           # env
           direnv
           dotenvx
+          mise
         ];
 
         # Necessary for using flakes on this system.
