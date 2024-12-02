@@ -21,7 +21,6 @@
           nixpkgs-fmt
           shfmt
           mise
-          dotenvx
 
           # kerl
           jdk
@@ -29,6 +28,10 @@
           openssl
           unixODBC
           fop
+
+          # env
+          direnv
+          dotenvx
         ];
 
         # Necessary for using flakes on this system.
