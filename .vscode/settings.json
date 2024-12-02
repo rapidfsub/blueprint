@@ -4,6 +4,10 @@
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "recentlyUsed",
   "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.saveConflictResolution": "overwriteFileOnDisk",
