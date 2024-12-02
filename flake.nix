@@ -14,6 +14,7 @@
         # $ nix-env -qaP | grep wget
         environment.systemPackages = with pkgs; [
           bat
+          bottom
           chezmoi
           go-task
           shfmt
@@ -68,6 +69,7 @@
 
         environment.shellAliases = {
           lg = "lazygit";
+          t = "task";
         };
       };
     in
