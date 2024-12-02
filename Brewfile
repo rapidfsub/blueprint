@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+brew "mas"
 cask "figma"
 cask "firefox"
 cask "google-chrome"
@@ -8,3 +9,4 @@ cask "mullvad-browser"
 cask "postgres-unofficial"
 cask "visual-studio-code"
 cask "warp"
+mas "WireGuard", id: 1451685025
