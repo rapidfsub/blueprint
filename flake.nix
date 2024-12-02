@@ -38,6 +38,7 @@
           yq
 
           # git
+          git-delete-merged-branches
           git-lfs
           lazygit
 
