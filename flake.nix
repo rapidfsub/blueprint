@@ -76,7 +76,7 @@
 
         environment.shellAliases = {
           lg = "lazygit";
-          t = "task";
+          t = "task -g";
         };
       };
     in
