@@ -18,3 +18,9 @@ tasks:
     dir: "{{.USER_WORKING_DIR}}"
     cmds:
       - mix phx.server
+
+  mix-test:
+    aliases: [mt]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix test
