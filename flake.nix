@@ -17,6 +17,7 @@
           bottom
           chezmoi
           cloc
+          fd
           flyctl
           go-task
           ripgrep
