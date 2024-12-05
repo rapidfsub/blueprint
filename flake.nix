@@ -18,6 +18,7 @@
           chezmoi
           cloc
           fd
+          fish
           flyctl
           go-task
           ripgrep
