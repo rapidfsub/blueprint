@@ -19,8 +19,9 @@
           cloc
           flyctl
           go-task
-          shfmt
           ripgrep
+          shfmt
+          typos
 
           # nix
           nixpkgs-fmt
