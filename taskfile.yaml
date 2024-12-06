@@ -19,4 +19,4 @@ includes:
 
   vscode:
     taskfile: ./taskfiles/vscode.yaml
-    aliases: [vsc]
+    aliases: [v]

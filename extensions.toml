@@ -1,7 +1,7 @@
 extensions = [
   "adpyke.vscode-sql-formatter",
   "dendron.dendron",
-  # "wakatime.vscode-wakatime",
+  "wakatime.vscode-wakatime",
 
   # plain text format
   "mechatroner.rainbow-csv",
