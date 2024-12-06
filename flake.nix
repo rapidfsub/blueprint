@@ -29,13 +29,6 @@
           nil
           nixpkgs-fmt
 
-          # kerl
-          jdk
-          wxGTK32
-          openssl
-          unixODBC
-          fop
-
           # data format
           jq
           yq
@@ -48,7 +41,6 @@
           # env
           direnv
           dotenvx
-          mise
 
           # network
           dnstop
@@ -72,12 +64,6 @@
         nixpkgs.hostPlatform = "aarch64-darwin";
 
         ### added
-        environment.variables = {
-          SSLDEV = "${pkgs.openssl.dev}";
-          SSLOUT = "${pkgs.openssl.out}";
-          ODBCOUT = "${pkgs.unixODBC.out}";
-        };
-
         environment.shellAliases = {
           lg = "lazygit";
           t = "task -g";
