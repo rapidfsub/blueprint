@@ -20,3 +20,7 @@ includes:
   vscode:
     taskfile: ./taskfiles/vscode.yaml
     aliases: [v]
+
+  yes24:
+    taskfile: ./taskfiles/yes24.yaml
+    aliases: [y]
