@@ -2,6 +2,7 @@
 
 set -e
 
+sudo -v
 if [[ $(arch) != "arm64" ]]; then
   true
 elif pgrep oahd &>/dev/null; then
@@ -25,8 +26,4 @@ if ! command -v brew &>/dev/null; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-zsh -c '
-  task chezmoi:apply
-  . ~/.zprofile
-  task brew:bundle
-  task vscode:sync-extensions'
+./post_setup.zsh
