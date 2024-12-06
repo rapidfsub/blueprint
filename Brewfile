@@ -15,6 +15,7 @@ cask "livebook"
 cask "mullvad-browser"
 cask "postgres-unofficial"
 cask "setapp"
+cask "utm"
 cask "visual-studio-code"
 cask "warp"
 mas "WireGuard", id: 1451685025
