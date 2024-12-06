@@ -26,6 +26,7 @@
           typos
 
           # nix
+          nil
           nixpkgs-fmt
 
           # kerl

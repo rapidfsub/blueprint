@@ -16,6 +16,23 @@
   "git.openRepositoryInParentFolders": "always",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil",
+  "nix.serverSettings": {
+    "nil": {
+      "diagnostics": {
+        "ignored": [
+          "unused_binding",
+          "unused_with"
+        ]
+      },
+      "formatting": {
+        "command": [
+          "nixpkgs-fmt"
+        ]
+      }
+    }
+  },
   "redhat.telemetry.enabled": false,
   "terminal.integrated.scrollback": 1000000
 }
