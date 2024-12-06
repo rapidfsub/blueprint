@@ -1,6 +1,5 @@
 extensions = [
   "adpyke.vscode-sql-formatter",
-  "dendron.dendron",
   "wakatime.vscode-wakatime",
 
   # plain text format
@@ -25,7 +24,7 @@ extensions = [
 
   # markdown
   "bierner.markdown-mermaid",
-  "IricBing.iricbing-markdown-formatter",
+  "iricbing.iricbing-markdown-formatter",
 
   # nix
   "jnoortheen.nix-ide",
@@ -33,4 +32,10 @@ extensions = [
   # python
   "ms-python.autopep8",
   "ms-python.python",
+  "ms-python.debugpy",
+  "ms-python.vscode-pylance",
+
+  # dendron
+  "dendron.dendron",
+  "dendron.dendron-paste-image",
 ]

@@ -7,4 +7,4 @@ task chezmoi:apply
 
 . ~/.zprofile
 task brew:bundle
-task vscode:sync-extensions
+task vscode:sync
