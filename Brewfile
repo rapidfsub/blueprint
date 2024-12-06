@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 brew "mas"
+brew "vfox"
 cask "figma"
 cask "firefox"
 cask "google-chrome"
