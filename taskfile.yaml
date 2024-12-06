@@ -20,3 +20,12 @@ includes:
   yes24:
     taskfile: ./taskfiles/yes24.yaml
     aliases: [y]
+
+tasks:
+  setup:
+    aliases: [s]
+    cmds:
+      - task: chezmoi:apply
+      - task: brew:bundle
+      - task: vscode:sync
+      - task: yes24:download

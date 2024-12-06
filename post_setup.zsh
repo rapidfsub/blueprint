@@ -3,9 +3,5 @@
 set -e
 
 . /etc/zshenv
-task chezmoi:apply
-
-. ~/.zprofile
-task brew:bundle
-task vscode:sync
-task yes24:download
+eval "$(/opt/homebrew/bin/brew shellenv)"
+task setup
