@@ -1,6 +1,22 @@
 version: "3"
 
 tasks:
+  dump-mas:
+    aliases: [dm]
+    cmds:
+      - brew bundle dump --file=./brew/mas/Brewfile --mas --force
+
+  bundle-mas:
+    aliases: [bm]
+    cmds:
+      - brew bundle --file=./brew/mas/Brewfile
+
+  install-mas:
+    aliases: [im]
+    cmds:
+      - mas install {{.CLI_ARGS}}
+      - task: dump-mas
+
   bundle:
     aliases: [b]
     cmds:
