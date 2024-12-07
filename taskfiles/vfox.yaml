@@ -1,0 +1,21 @@
+version: "3"
+
+vars:
+  LIST:
+    sh: cat ./.home/.version-fox/.tool-versions | sed -E 's/^([^ ]+)[ ]+/\1@/g'
+
+  ERLANG_FIRST:
+    sh: echo '{{.LIST}}' | grep erlang || true && echo '{{.LIST}}'
+
+tasks:
+  install-all:
+    aliases: [ia]
+    cmds:
+      - for: { var: ERLANG_FIRST }
+        cmd: vfox install {{.ITEM}} || true
+
+  uninstall-all:
+    aliases: [ua]
+    cmds:
+      - for: { var: LIST }
+        cmd: vfox uninstall {{.ITEM}} || true

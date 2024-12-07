@@ -13,9 +13,13 @@ includes:
     taskfile: ./taskfiles/nix.yaml
     aliases: [n]
 
+  vfox:
+    taskfile: ./taskfiles/vfox.yaml
+    aliases: [v]
+
   vscode:
     taskfile: ./taskfiles/vscode.yaml
-    aliases: [v]
+    aliases: [vs]
 
   yes24:
     taskfile: ./taskfiles/yes24.yaml
@@ -27,5 +31,6 @@ tasks:
     cmds:
       - task: chezmoi:apply
       - task: brew:bundle
+      - task: vfox:install-all
       - task: vscode:sync
       - task: yes24:download
