@@ -1,11 +1,11 @@
 [include]
-  path = ./rapidfsub.inc
+path = ./rapidfsub.inc
 
 [includeIf "gitdir:~/devall/"]
-  path = ./devall.inc
+path = ./devall.inc
 
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
