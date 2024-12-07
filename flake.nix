@@ -68,6 +68,8 @@
           lg = "lazygit";
           t = "task -g";
         };
+
+        security.pam.enableSudoTouchIdAuth = true;
       };
     in
     {
