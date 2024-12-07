@@ -13,13 +13,38 @@
         # List packages installed in system profile. To search by name, run:
         # $ nix-env -qaP | grep wget
         environment.systemPackages = with pkgs; [
+          bat
+          bottom
           chezmoi
+          cloc
+          fd
+          fish
+          flyctl
           go-task
-          lazygit
+          ripgrep
+          shfmt
+          typos
+
+          # nix
+          nil
+          nixpkgs-fmt
+
+          # data format
           jq
           yq
-          nixpkgs-fmt
-          shfmt
+
+          # git
+          git-delete-merged-branches
+          git-lfs
+          lazygit
+
+          # env
+          direnv
+          dotenvx
+
+          # network
+          dnstop
+          doggo
         ];
 
         # Necessary for using flakes on this system.
@@ -37,6 +62,12 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
+
+        ### added
+        environment.shellAliases = {
+          lg = "lazygit";
+          t = "task -g";
+        };
       };
     in
     {

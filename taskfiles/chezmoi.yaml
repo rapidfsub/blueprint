@@ -4,4 +4,4 @@ tasks:
   apply:
     aliases: [a]
     cmds:
-      - chezmoi apply -c=./.config/chezmoi/chezmoi.toml
+      - chezmoi apply --source=./dotfiles --force

@@ -4,10 +4,28 @@ includes:
   brew:
     taskfile: ./taskfiles/brew.yaml
     aliases: [b]
+
   chezmoi:
     taskfile: ./taskfiles/chezmoi.yaml
-    aliases: [cm]
-  nix: ./taskfiles/nix.yaml
+    aliases: [c]
+
+  nix:
+    taskfile: ./taskfiles/nix.yaml
+    aliases: [n]
+
   vscode:
     taskfile: ./taskfiles/vscode.yaml
-    aliases: [vsc]
+    aliases: [v]
+
+  yes24:
+    taskfile: ./taskfiles/yes24.yaml
+    aliases: [y]
+
+tasks:
+  setup:
+    aliases: [s]
+    cmds:
+      - task: chezmoi:apply
+      - task: brew:bundle
+      - task: vscode:sync
+      - task: yes24:download

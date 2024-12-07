@@ -2,6 +2,7 @@
 
 set -e
 
+sudo -v
 if [[ $(arch) != "arm64" ]]; then
   true
 elif pgrep oahd &>/dev/null; then
@@ -17,16 +18,7 @@ if ! command -v nix &>/dev/null; then
 fi
 
 sudo -v
-if [ ! -e ./flake.nix ]; then
-  nix flake init -t nix-darwin
-fi
-
-sudo -v
-if command -v darwin-rebuild &>/dev/null; then
-  darwin-rebuild switch --flake .#simple
-else
-  nix run nix-darwin -- switch --flake .#simple
-fi
+nix run nix-darwin -- switch --flake .#simple
 
 sudo -v
 if ! command -v brew &>/dev/null; then
@@ -34,8 +26,4 @@ if ! command -v brew &>/dev/null; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-zsh -c '
-  task chezmoi:apply
-  . ~/.zprofile
-  task brew:bundle
-  task vscode:sync-extensions'
+./post_setup.zsh

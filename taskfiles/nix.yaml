@@ -2,5 +2,6 @@ version: "3"
 
 tasks:
   switch:
+    aliases: [s]
     cmds:
       - darwin-rebuild switch --flake .#simple

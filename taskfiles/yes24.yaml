@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  # https://www.yes24.com/notice/ebookguide/guide_pc.aspx
+  download:
+    aliases: [d]
+    cmds:
+      - curl -L -o ~/Downloads/YES24eBook.dmg https://ebookcdn.yes24.com/UPGRADE/MAC_YES24/PACKAGE/YES24eBook.dmg

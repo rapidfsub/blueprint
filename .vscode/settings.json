@@ -4,6 +4,10 @@
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "recentlyUsed",
   "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.saveConflictResolution": "overwriteFileOnDisk",
@@ -12,6 +16,23 @@
   "git.openRepositoryInParentFolders": "always",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil",
+  "nix.serverSettings": {
+    "nil": {
+      "diagnostics": {
+        "ignored": [
+          "unused_binding",
+          "unused_with"
+        ]
+      },
+      "formatting": {
+        "command": [
+          "nixpkgs-fmt"
+        ]
+      }
+    }
+  },
   "redhat.telemetry.enabled": false,
   "terminal.integrated.scrollback": 1000000
 }

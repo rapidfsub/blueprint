@@ -1,27 +1,36 @@
 version: "3"
 
+vars:
+  DIFF:
+    sh: diff <(code --list-extensions | sort) <(tomlq -r '.extensions[]' ./extensions.toml | sort) || true
+
+  DIFF_EXTRA:
+    sh: echo "{{.DIFF}}" | grep '^<' | sed 's/^<//g'
+
+  DIFF_MISSING:
+    sh: echo "{{.DIFF}}" | grep '^>' | sed 's/^>//g'
+
 tasks:
-  uninstall-extensions:
+  uninstall-all:
+    aliases: [ua]
+    cmds:
+      - code --list-extensions | xargs -n 1 code --uninstall-extension
+
+  uninstall-extra:
     aliases: [ue]
     cmds:
-      - >
-        diff -i <(code --list-extensions) <(tomlq -r '.extensions[]' ./extensions.toml | sort) |
-        grep '<' |
-        sed 's/^< //g' |
-        xargs -n 1 code --uninstall-extension
+      - for: { var: DIFF_EXTRA }
+        cmd: code --uninstall-extension {{.ITEM}} || true
 
-  install-extensions:
-    aliases: [ie]
+  install-missing:
+    aliases: [im]
     cmds:
-      - >
-        diff -i <(code --list-extensions) <(tomlq -r '.extensions[]' ./extensions.toml | sort) |
-        grep '>' |
-        sed 's/^> //g' |
-        xargs -n 1 code --install-extension
+      - for: { var: DIFF_MISSING }
+        cmd: code --force --install-extension {{.ITEM}}
 
-  sync-extensions:
-    aliases: [se]
+  sync:
+    aliases: [s]
     cmds:
-      - task: uninstall-extensions
-      - task: install-extensions
+      - task: uninstall-extra
+      - task: install-missing
       - code --update-extensions

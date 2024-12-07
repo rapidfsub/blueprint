@@ -1,0 +1,26 @@
+version: "3"
+
+tasks:
+  mix-deps-get:
+    aliases: [mdg]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix deps.get
+
+  mix-ecto-reset:
+    aliases: [mer]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix ecto.reset
+
+  mix-phx-server:
+    aliases: [mps]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix phx.server
+
+  mix-test:
+    aliases: [mt]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix test

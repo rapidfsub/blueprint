@@ -1,0 +1,3 @@
+.version-fox/*
+!.version-fox/.tool-versions
+!.version-fox/config.yaml
