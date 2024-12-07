@@ -66,7 +66,7 @@
         ### added
         environment.shellAliases = {
           lg = "lazygit";
-          t = "task -g";
+          t = "task";
         };
 
         security.pam.enableSudoTouchIdAuth = true;
