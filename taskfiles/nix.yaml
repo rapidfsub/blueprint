@@ -5,3 +5,9 @@ tasks:
     aliases: [s]
     cmds:
       - darwin-rebuild switch --flake .#simple
+
+  update:
+    aliases: [u]
+    cmds:
+      - nix flake update
+      - task: switch
