@@ -20,6 +20,7 @@
           fd
           fish
           flyctl
+          fzf
           go-task
           ripgrep
           shfmt
