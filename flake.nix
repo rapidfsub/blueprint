@@ -24,6 +24,7 @@
           ripgrep
           shfmt
           typos
+          zoxide
 
           # nix
           nil
