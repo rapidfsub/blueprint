@@ -26,6 +26,7 @@
           shfmt
           typos
           zoxide
+          zsh-autocomplete
 
           # nix
           nil
