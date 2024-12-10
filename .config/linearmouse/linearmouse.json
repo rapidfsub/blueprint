@@ -1,100 +1,100 @@
 {
-  "$schema": "https://schema.linearmouse.app/0.10.0",
-  "schemes": [
+  "schemes" : [
     {
-      "if": {
-        "device": {
-          "category": "mouse",
-          "productID": "0xb023",
-          "productName": "MX Master 3",
-          "serialNumber": "DD3C39BACED01F6F",
-          "vendorID": "0x46d"
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
         }
       },
-      "scrolling": {
-        "reverse": {
-          "vertical": true
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productID" : "0xb023",
+          "productName" : "MX Master 3",
+          "serialNumber" : "DD3C39BACED01F6F",
+          "category" : "mouse"
         }
       }
     },
     {
-      "if": {
-        "device": {
-          "category": "mouse",
-          "productID": "0xb025",
-          "productName": "MX Anywhere 3",
-          "serialNumber": "26076E79C84616DF",
-          "vendorID": "0x46d"
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "MX Anywhere 3",
+          "serialNumber" : "26076E79C84616DF",
+          "category" : "mouse",
+          "productID" : "0xb025"
         }
       },
-      "scrolling": {
-        "acceleration": {
-          "vertical": 1
+      "scrolling" : {
+        "distance" : {
+          "vertical" : "auto"
         },
-        "distance": {
-          "vertical": "auto"
+        "acceleration" : {
+          "vertical" : 1
         },
-        "reverse": {
-          "vertical": true
+        "speed" : {
+          "vertical" : 0
         },
-        "speed": {
-          "vertical": 0
+        "reverse" : {
+          "vertical" : true
         }
       }
     },
     {
-      "if": {
-        "device": {
-          "category": "mouse",
-          "productID": "0x2c8a",
-          "productName": "ROCCAT Kone Pro Air",
-          "vendorID": "0x1e7d"
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
         }
       },
-      "scrolling": {
-        "acceleration": {
-          "vertical": 1
-        },
-        "reverse": {
-          "vertical": true
+      "if" : {
+        "device" : {
+          "productName" : "ROCCAT Kone Pro Air",
+          "productID" : "0x2c8a",
+          "category" : "mouse",
+          "vendorID" : "0x1e7d"
         }
       }
     },
     {
-      "if": {
-        "device": {
-          "category": "mouse",
-          "productID": "0x7a5",
-          "productName": "MicrosoftÆ 2.4GHz Transceiver v9.0",
-          "vendorID": "0x45e"
+      "if" : {
+        "device" : {
+          "productID" : "0x7a5",
+          "productName" : "MicrosoftÆ 2.4GHz Transceiver v9.0",
+          "vendorID" : "0x45e",
+          "category" : "mouse"
         }
       },
-      "scrolling": {
-        "acceleration": {
-          "vertical": 1
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
         },
-        "reverse": {
-          "vertical": true
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     },
     {
-      "if": {
-        "device": {
-          "category": "mouse",
-          "productID": "0x7a5",
-          "productName": "Microsoft® 2.4GHz Transceiver v9.0",
-          "vendorID": "0x45e"
+      "if" : {
+        "device" : {
+          "vendorID" : "0x45e",
+          "productID" : "0x7a5",
+          "productName" : "Microsoft® 2.4GHz Transceiver v9.0",
+          "category" : "mouse"
         }
       },
-      "scrolling": {
-        "acceleration": {
-          "vertical": 1
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
         },
-        "reverse": {
-          "vertical": true
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
 }
