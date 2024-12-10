@@ -74,6 +74,15 @@
 
         security.pam.enableSudoTouchIdAuth = true;
 
+        launchd = {
+          user = {
+            agents = builtins.mapAttrs (key: agent: agent // { serviceConfig.RunAtLoad = true; }) {
+              linearMouse.command = "open -a LinearMouse.app";
+              postgres.command = "open -a Postgres.app";
+            };
+          };
+        };
+
         system.defaults.NSGlobalDomain = {
           AppleICUForce24HourTime = true;
           ApplePressAndHoldEnabled = false;
