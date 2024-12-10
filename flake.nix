@@ -100,6 +100,27 @@
           static-only = true;
           tilesize = 48;
         };
+
+        system.defaults.CustomUserPreferences = {
+          "~/Library/Preferences/ByHost/com.apple.controlcenter.plist" = {
+            "AccessibilityShortcuts" = 9;
+            "AirDrop" = 24;
+            "Battery" = 9;
+            "BatteryShowPercentage" = 0;
+            "Bluetooth" = 8;
+            "Display" = 8;
+            "FocusModes" = 8;
+            "Hearing" = 9;
+            "KeyboardBrightness" = 9;
+            "MusicRecognition" = 9;
+            "NowPlaying" = 8;
+            "ScreenMirroring" = 8;
+            "Sound" = 8;
+            "StageManager" = 8;
+            "UserSwitcher" = 9;
+            "WiFi" = 24;
+          };
+        };
       };
     in
     {
