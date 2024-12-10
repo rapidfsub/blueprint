@@ -120,6 +120,10 @@
             "UserSwitcher" = 9;
             "WiFi" = 24;
           };
+
+          "~/Library/Preferences/ByHost/com.apple.Spotlight.plist" = {
+            "MenuItemHidden" = 1;
+          };
         };
       };
     in
