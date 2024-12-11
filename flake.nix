@@ -133,6 +133,29 @@
           "~/Library/Preferences/ByHost/com.apple.Spotlight.plist" = {
             MenuItemHidden = 1;
           };
+
+          "com.apple.symbolichotkeys".AppleSymbolicHotKeys = {
+            ## Launchpad & Dock
+            ### Turn Dock hiding on/off
+            "52".enabled = 0;
+
+            ## Input Sources
+            ### Select the previous input source
+            "60" = {
+              enabled = 1;
+              value = {
+                parameters = [
+                  108
+                  37
+                  393216
+                ];
+                type = "standard";
+              };
+            };
+
+            ### Select next source inInput menu
+            "61".enabled = 0;
+          };
         };
       };
     in
