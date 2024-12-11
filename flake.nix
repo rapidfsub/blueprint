@@ -134,6 +134,7 @@
             MenuItemHidden = 1;
           };
 
+          # defaults read com.apple.symbolichotkeys
           "com.apple.symbolichotkeys".AppleSymbolicHotKeys = {
             ## Launchpad & Dock
             ### Turn Dock hiding on/off
