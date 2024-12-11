@@ -4,11 +4,11 @@
     {
       "if" : {
         "device" : {
-          "productID" : "0xb023",
-          "productName" : "MX Master 3",
-          "serialNumber" : "DD3C39BACED01F6F",
           "vendorID" : "0x46d",
-          "category" : "mouse"
+          "category" : "mouse",
+          "serialNumber" : "DD3C39BACED01F6F",
+          "productID" : "0xb023",
+          "productName" : "MX Master 3"
         }
       },
       "scrolling" : {
@@ -21,24 +21,24 @@
       "if" : {
         "device" : {
           "productName" : "MX Anywhere 3",
-          "serialNumber" : "26076E79C84616DF",
-          "vendorID" : "0x46d",
           "productID" : "0xb025",
-          "category" : "mouse"
+          "serialNumber" : "26076E79C84616DF",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
         }
       },
       "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
         "distance" : {
           "vertical" : "auto"
         },
-        "acceleration" : {
-          "vertical" : 1
+        "reverse" : {
+          "vertical" : true
         },
         "speed" : {
           "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     },
@@ -47,8 +47,8 @@
         "device" : {
           "category" : "mouse",
           "productID" : "0x2c8a",
-          "vendorID" : "0x1e7d",
-          "productName" : "ROCCAT Kone Pro Air"
+          "productName" : "ROCCAT Kone Pro Air",
+          "vendorID" : "0x1e7d"
         }
       },
       "scrolling" : {
@@ -61,38 +61,38 @@
       }
     },
     {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      },
       "if" : {
         "device" : {
-          "vendorID" : "0x45e",
           "productID" : "0x7a5",
           "category" : "mouse",
-          "productName" : "MicrosoftÆ 2.4GHz Transceiver v9.0"
-        }
-      },
-      "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
-        "acceleration" : {
-          "vertical" : 1
+          "productName" : "MicrosoftÆ 2.4GHz Transceiver v9.0",
+          "vendorID" : "0x45e"
         }
       }
     },
     {
-      "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
-        "acceleration" : {
-          "vertical" : 1
-        }
-      },
       "if" : {
         "device" : {
           "vendorID" : "0x45e",
-          "productID" : "0x7a5",
+          "category" : "mouse",
           "productName" : "Microsoft® 2.4GHz Transceiver v9.0",
-          "category" : "mouse"
+          "productID" : "0x7a5"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : true
         }
       }
     }
