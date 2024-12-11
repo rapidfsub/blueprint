@@ -141,17 +141,7 @@
 
             ## Input Sources
             ### Select the previous input source
-            "60" = {
-              enabled = 1;
-              value = {
-                parameters = [
-                  108
-                  37
-                  393216
-                ];
-                type = "standard";
-              };
-            };
+            "60".enabled = 1;
 
             ### Select next source inInput menu
             "61".enabled = 0;
