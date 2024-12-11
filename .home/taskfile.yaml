@@ -24,3 +24,9 @@ tasks:
     dir: "{{.USER_WORKING_DIR}}"
     cmds:
       - mix test
+
+  mix-compile-force:
+    aliases: [mcf]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix compile --force
