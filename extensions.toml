@@ -19,6 +19,7 @@ extensions = [
 
   # elixir
   "jakebecker.elixir-ls",
+  "jamilabreu.vscode-phoenix-snippets",
   "phoenixframework.phoenix",
   "samuel-pordeus.elixir-test",
 
