@@ -21,6 +21,7 @@ extensions = [
   "jakebecker.elixir-ls",
   "jamilabreu.vscode-phoenix-snippets",
   "phoenixframework.phoenix",
+  "phoenix-liveview-snippets.phoenix-liveview-snippets",
   "samuel-pordeus.elixir-test",
 
   # markdown
