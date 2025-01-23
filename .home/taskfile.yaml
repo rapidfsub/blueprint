@@ -7,6 +7,12 @@ tasks:
     cmds:
       - mix deps.get
 
+  mix-deps-compile:
+    aliases: [mdc]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix deps.compile {{.CLI_ARGS}}
+
   mix-ecto-reset:
     aliases: [mer]
     dir: "{{.USER_WORKING_DIR}}"
