@@ -1,6 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
-eval "$(vfox activate zsh)"
+. $(brew --prefix asdf)/libexec/asdf.sh
+# eval "$(vfox activate zsh)"
 eval "$(zoxide init zsh)"
 
 export PATH="/Applications/Postgres.app/Contents/Versions/16/bin:$PATH"
