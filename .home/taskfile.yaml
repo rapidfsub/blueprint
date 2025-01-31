@@ -13,6 +13,19 @@ tasks:
     cmds:
       - mix deps.compile {{.CLI_ARGS}}
 
+  mix-deps-clean-get:
+    aliases: [mdcg]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix deps.clean {{.CLI_ARGS}}
+      - mix deps.get
+
+  mix-deps-update:
+    aliases: [mdu]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix deps.update {{.CLI_ARGS}}
+
   mix-ecto-reset:
     aliases: [mer]
     dir: "{{.USER_WORKING_DIR}}"
@@ -30,6 +43,12 @@ tasks:
     dir: "{{.USER_WORKING_DIR}}"
     cmds:
       - mix test
+
+  mix-compile:
+    aliases: [mc]
+    dir: "{{.USER_WORKING_DIR}}"
+    cmds:
+      - mix compile
 
   mix-compile-force:
     aliases: [mcf]
