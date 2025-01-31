@@ -8,6 +8,7 @@
     "elixir": "html",
     "phoenix-heex": "html"
   },
+  "extensions.ignoreRecommendations": true,
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.saveConflictResolution": "overwriteFileOnDisk",
