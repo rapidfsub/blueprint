@@ -70,6 +70,9 @@
         environment.shellAliases = {
           lg = "lazygit";
           t = "task";
+          mix_env = "echo \"MIX_ENV=$MIX_ENV\"";
+          emd = "export MIX_ENV=dev; mix_env";
+          emt = "export MIX_ENV=test; mix_env";
         };
 
         security.pam.enableSudoTouchIdAuth = true;

@@ -9,13 +9,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/16/bin:$PATH"
 function c {
   pushd . &>/dev/null
   z $1 &>/dev/null
-  code .
+  code $(ls | grep -m 1 .code-workspace || echo ".")
   popd &>/dev/null
 }
-
-function mix_env {
-  echo "MIX_ENV=$MIX_ENV"
-}
-
-alias emd="export MIX_ENV=dev; mix_env"
-alias emt="export MIX_ENV=test; mix_env"
