@@ -1,6 +1,6 @@
-# eval "$(vfox activate zsh)"
-export ASDF_DATA_DIR="$HOME/.asdf"
-export PATH="$ASDF_DATA_DIR/shims:$PATH"
+eval "$(vfox activate zsh)"
+# export ASDF_DATA_DIR="$HOME/.asdf"
+# export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
