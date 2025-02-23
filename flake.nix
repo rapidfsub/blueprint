@@ -22,6 +22,7 @@
           flyctl
           fzf
           go-task
+          pandoc
           ripgrep
           shfmt
           typos
