@@ -1,5 +1,6 @@
 extensions = [
   "adpyke.vscode-sql-formatter",
+  "reditorsupport.r",
   "wakatime.vscode-wakatime",
 
   # plain text format
