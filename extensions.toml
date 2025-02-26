@@ -1,5 +1,6 @@
 extensions = [
   "adpyke.vscode-sql-formatter",
+  "google.geminicodeassist",
   "reditorsupport.r",
   "wakatime.vscode-wakatime",
 

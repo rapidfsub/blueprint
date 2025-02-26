@@ -1,4 +1,5 @@
 {
+  "diffEditor.codeLens": true,
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -14,6 +15,7 @@
   "files.saveConflictResolution": "overwriteFileOnDisk",
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "geminicodeassist.project": "",
   "git.openRepositoryInParentFolders": "always",
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
